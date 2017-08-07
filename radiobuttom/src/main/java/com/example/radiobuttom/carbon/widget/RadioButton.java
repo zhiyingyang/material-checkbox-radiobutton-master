@@ -11,7 +11,7 @@ import com.example.radiobuttom.carbon.drawable.CheckableDrawable;
 
 
 /**
- * Created by Marcin on 2015-03-06.
+ * Created by Marcin on 2015-03   -06.
  */
 public class RadioButton extends android.widget.RadioButton {
     private CheckableDrawable drawable;
