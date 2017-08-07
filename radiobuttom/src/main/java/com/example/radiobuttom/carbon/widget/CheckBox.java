@@ -1,4 +1,4 @@
-package carbon.widget;
+package com.example.radiobuttom.carbon.widget;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -6,23 +6,24 @@ import android.content.res.TypedArray;
 import android.graphics.PointF;
 import android.util.AttributeSet;
 
-import carbon.drawable.CheckableDrawable;
+import com.example.radiobuttom.R;
+import com.example.radiobuttom.carbon.drawable.CheckableDrawable;
 
 /**
  * Created by Marcin on 2015-03-06.
  */
-public class RadioButton extends android.widget.RadioButton {
+public class CheckBox extends android.widget.CheckBox {
     private CheckableDrawable drawable;
 
-    public RadioButton(Context context) {
+    public CheckBox(Context context) {
         this(context, null);
     }
 
-    public RadioButton(Context context, AttributeSet attrs) {
-        this(context, attrs, android.R.attr.radioButtonStyle);
+    public CheckBox(Context context, AttributeSet attrs) {
+        this(context, attrs, android.R.attr.checkboxStyle);
     }
 
-    public RadioButton(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CheckBox(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(attrs, defStyleAttr);
     }
@@ -31,13 +32,13 @@ public class RadioButton extends android.widget.RadioButton {
         if (isInEditMode())
             return;
 
-        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.RadioButton, defStyleAttr, 0);
+        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.CheckBox, defStyleAttr, 0);
 
-        drawable = new CheckableDrawable(getContext(), R.raw.carbon_radiobutton_checked, R.raw.carbon_radiobutton_unchecked, R.raw.carbon_radiobutton_filled, new PointF(0, 0));
+        drawable = new CheckableDrawable(getContext(), R.raw.carbon_checkbox_checked, R.raw.carbon_checkbox_unchecked, R.raw.carbon_checkbox_filled, new PointF(-0.09f, 0.11f));
         setButtonDrawable(getResources().getDrawable(android.R.color.transparent));
         setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null);
 
-        ColorStateList csl = a.getColorStateList(R.styleable.RadioButton_carbon_radioColor);
+        ColorStateList csl = a.getColorStateList(R.styleable.CheckBox_carbon_checkColor);
         if (csl != null)
             drawable.setColor(csl);
 

@@ -4,21 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <carbon.widget.CheckBox
+    <com.example.radiobuttom.carbon.widget.CheckBox
         android:text="check me!"
         style="@style/carbon_CheckBox"
         android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="48dp" />
 
-    <carbon.widget.CheckBox
+    <com.example.radiobuttom.carbon.widget.CheckBox
         android:text="check me!"
         style="@style/carbon_CheckBox"
         android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="48dp" />
 
-    <carbon.widget.CheckBox
+    <com.example.radiobuttom.carbon.widget.CheckBox
         android:text="check me!"
         style="@style/carbon_CheckBox"
         android:gravity="center_vertical"
@@ -29,21 +29,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <carbon.widget.RadioButton
+        <com.example.radiobuttom.carbon.widget.RadioButton
             android:text="pick me!"
             style="@style/carbon_RadioButton"
             android:gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="48dp" />
 
-        <carbon.widget.RadioButton
+        <com.example.radiobuttom.carbon.widget.RadioButton
             android:text="pick me!"
             style="@style/carbon_RadioButton"
             android:gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="48dp" />
 
-        <carbon.widget.RadioButton
+        <com.example.radiobuttom.carbon.widget.RadioButton
             android:text="pick me!"
             style="@style/carbon_RadioButton"
             android:gravity="center_vertical"
@@ -51,7 +51,7 @@
             android:layout_height="48dp" />
     </RadioGroup>
 
-    <carbon.widget.CheckBox
+    <com.example.radiobuttom.carbon.widget.CheckBox
         android:text=""
         style="@style/carbon_CheckBox"
         android:gravity="center_vertical"

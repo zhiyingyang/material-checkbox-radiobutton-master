@@ -1,4 +1,4 @@
-package carbon.drawable;
+package com.example.radiobuttom.carbon.drawable;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -20,8 +20,8 @@ import android.graphics.drawable.Drawable;
 
 import com.caverock.androidsvg.SVG;
 import com.caverock.androidsvg.SVGParseException;
+import com.example.radiobuttom.R;
 
-import carbon.widget.R;
 
 /**
  * Created by Marcin on 2015-03-06.
